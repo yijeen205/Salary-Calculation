@@ -21,3 +21,14 @@ System.out.printf("Total salary including bonus: %.2f%n", totalSalary);  
 input.close();
 }
   }
+
+if (hasLoan.equalsIgnoreCase("yes")) {    
+System.out.print("Enter monthly loan deduction: ");      
+loanDeduction = input.nextDouble();    
+}
+ double netSalary = grossSalary - loanDeduction;
+ System.out.printf("Gross salary: %.2f%n", grossSalary);
+System.out.printf("Loan deduction: %.2f%n", loanDeduction);    
+System.out.printf("Net salary after deduction: %.2f%n", netSalary);
+ }
+}
